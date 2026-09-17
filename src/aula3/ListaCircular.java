@@ -48,14 +48,14 @@ public class ListaCircular {
 			return;
 		}
 
-		No ultimo = inicio;
+		No atual = inicio;
 
-		while (ultimo.proximo != inicio) {
-			ultimo = ultimo.proximo;
+		while (atual.proximo != inicio) {
+			atual = atual.proximo;
 		}
 
 		inicio = inicio.proximo;
-		ultimo.proximo = inicio;
+		atual.proximo = inicio;
 	}
 
 	public void removeUltimo() {
@@ -68,15 +68,15 @@ public class ListaCircular {
 			return;
 		}
 
-		No ultimo = inicio;
+		No atual = inicio;
 		No anterior = inicio;
 
-		while (ultimo.proximo != inicio) {
-			anterior = ultimo;
-			ultimo = ultimo.proximo;
+		while (atual.proximo != inicio) {
+			anterior = atual;
+			atual = atual.proximo;
 		}
 
-		ultimo = null;
+		atual = null;
 		anterior.proximo = inicio;
 	}
 
@@ -117,15 +117,20 @@ public class ListaCircular {
 	}
 
 	public void exibeLista() {
+		
 		if (vazia()) {
 			return;
 		}
+		
 		No atual = inicio;
+		
 		System.out.print("\nLista: ");
+		
 		do {
 			System.out.print(atual.dado + " ");
 			atual = atual.proximo;
 		} while (atual != inicio);
+		
 		System.out.println("\n");
 	}
 
