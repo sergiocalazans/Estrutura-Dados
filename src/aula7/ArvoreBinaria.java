@@ -48,10 +48,8 @@ public class ArvoreBinaria {
 	}
 
 	void inserir(int valor) {
-
 		raiz = inserir(raiz, valor);
 	}
-
 
 
 	// Busca
@@ -123,8 +121,7 @@ public class ArvoreBinaria {
 		} else {
 
 			// Nó sem filhos
-			if (n.esquerda == null &&
-				n.direita == null) {
+			if (n.esquerda == null && n.direita == null) {
 				return null;
 			}
 
