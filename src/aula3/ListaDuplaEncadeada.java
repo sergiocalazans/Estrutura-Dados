@@ -13,8 +13,8 @@ public class ListaDuplaEncadeada {
 		}
 	}
 
-	private No cabeca = null;
-	private No cauda = null;
+	No cabeca = null;
+	No cauda = null;
 
 	public void insereElemento(int elemento) {
 		No novoNo = new No(elemento);
