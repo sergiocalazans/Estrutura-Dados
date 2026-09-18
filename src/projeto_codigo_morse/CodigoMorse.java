@@ -148,8 +148,7 @@ public class CodigoMorse {
             return null;
         }
 
-        if (atual.caractere != null &&
-                atual.caractere.equals(procurado)) {
+        if (atual.caractere != null && atual.caractere.equals(procurado)) {
             return caminho;
         }
 
