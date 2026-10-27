@@ -29,7 +29,6 @@ public class ArvoreBinaria {
 
 		// Encontrou uma posição vazia
 		if (n == null) {
-
 			return new Node(valor);
 		}
 
@@ -186,26 +185,19 @@ public class ArvoreBinaria {
 		ArvoreBinaria arvore = new ArvoreBinaria();
 
 		// Inserções
-		arvore.inserir(50);
-		arvore.inserir(30);
-		arvore.inserir(70);
+		arvore.inserir(10);
+		arvore.inserir(5);
 		arvore.inserir(20);
-		arvore.inserir(40);
-		arvore.inserir(60);
-		arvore.inserir(80);
+		arvore.inserir(3);
+		arvore.inserir(20);
+		arvore.inserir(15);
+		arvore.inserir(30);
 
 		arvore.imprimir();
-
-		// Buscas
-		arvore.buscar(40);
-		arvore.buscar(100);
 
 		// Remoção
-		arvore.remover(50);
+		arvore.remover(5);
 
 		arvore.imprimir();
-
-		// Elemento inexistente
-		arvore.remover(100);
 	}
 }
